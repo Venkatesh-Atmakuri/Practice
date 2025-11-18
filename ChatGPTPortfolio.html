@@ -1,0 +1,140 @@
+<!--
+Portfolio Website using HTML, Bootstrap, and JavaScript
+To deploy:
+1. Create a GitHub repository (e.g., 'venkatesh-portfolio').
+2. Push this code to your repo.
+3. Enable GitHub Pages in the repository settings (main branch, /root folder).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkatesh Atmakuri | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { background-color: #f8f9fa; }
+    .hero { padding: 100px 0; background: linear-gradient(90deg, #6366f1, #ec4899); color: white; text-align: center; }
+    .section-title { font-weight: 600; margin-bottom: 20px; color: #333; }
+    .card:hover { transform: translateY(-5px); transition: 0.3s; }
+    footer { background-color: #111; color: #aaa; padding: 20px 0; text-align: center; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Venkatesh Atmakuri</h1>
+      <p class="lead">Embedded Systems • Frontend • Finance Executive</p>
+      <a href="#projects" class="btn btn-light mt-3">View Projects</a>
+      <a href="#contact" class="btn btn-outline-light mt-3">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>I’m a Food & Beverages and Finance Executive with a background in Electronics and Embedded Systems. I build responsive frontends and reliable embedded designs. I enjoy working across both hardware and software domains.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce UI</h5>
+              <p class="card-text">Responsive storefront built with HTML, CSS, and Bootstrap. Includes cart, filters, and checkout mock.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Embedded Dashboard</h5>
+              <p class="card-text">Telemetry dashboard for microcontroller sensors using JavaScript charts and Bootstrap layout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio CMS</h5>
+              <p class="card-text">A simple CMS to manage portfolio data dynamically using local storage and JS DOM manipulation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-3">C Language</div>
+        <div class="col-md-3 col-6 mb-3">Python</div>
+        <div class="col-md-3 col-6 mb-3">HTML / CSS</div>
+        <div class="col-md-3 col-6 mb-3">JavaScript</div>
+        <div class="col-md-3 col-6 mb-3">PCB Design</div>
+        <div class="col-md-3 col-6 mb-3">Microprocessors</div>
+        <div class="col-md-3 col-6 mb-3">Teamwork</div>
+        <div class="col-md-3 col-6 mb-3">Manual Testing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <p><strong>Email:</strong> venkatesh@example.com</p>
+          <p><strong>Location:</strong> Rajam, Andhra Pradesh</p>
+        </div>
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <input type="text" id="name" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" id="email" class="form-control" placeholder="Your Email" required />
+            </div>
+            <div class="mb-3">
+              <textarea id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Venkatesh Atmakuri — Built with HTML, Bootstrap, and JavaScript</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form submit handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      window.location.href = `mailto:venkatesh@example.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(message)}%0A%0AFrom: ${email}`;
+    });
+  </script>
+</body>
+</html>
