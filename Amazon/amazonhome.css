@@ -1,0 +1,183 @@
+/** Navbar css style**/
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ /** Navbar Amazon Logo Box-1 CSS style **/
+.nav-logo {
+    height: 50px;
+    width: 110px;
+}
+.logo {
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 110px;
+} 
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border :hover {
+    border: 1.5px solid white;
+}
+/** Navbar Deliver Location Box-2 CSS Style **/
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+
+}
+
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Search box Box-3 CSS style */
+
+.nav-search {
+     display: flex;  /* Flex= is used to place things side by side  */
+    justify-content: space-evenly; /* align-items: center; */
+    background-color: green;  /* backgroung colour to identify the Search bar size */
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px; /* for round edges for the boxs */
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center; /* justify-content is used for to place the elements in Left,center,right */ 
+    align-items: center; /* align-items is used for to place the elements in Top, Middel, Bottom */
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #0f1111;
+}
+
+/* Navbar Country Decleration (box-4) CSS style ( skiped for now) */
+
+/* Navbar Signin & Account (Box-5) CSS style */
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem; 
+    font-weight: 700; /* font-weight is used for Bold. */
+}
+
+.nav-signin:hover{
+        border: 1px solid rgb(255, 255, 255);
+
+}
+.nav-search:hover {
+    border: 2.5px solid orange;
+}
+
+/* Navbar Returns & Orders (Box-6) CSS style  (both the Box 5 &6 are same)*/
+
+/* Navbar Cart & Icon (Box-7) CSS style */
+
+.nav-cart i{
+    font-size: 25px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* navigation Bar Style is completed */
+
+/* Now Panel Bar CSS style will start from here */
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Panel Bar CSS style got completed here.*/
+
+/* now Main part of the webpage will start showing product images*/
+.hero-section {
+    background-image: url(hero_image.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: #007185;
+}
+
+/* till here Main page background image set up completed. */
+/* now the products will come on screen */
+
