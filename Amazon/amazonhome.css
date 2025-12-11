@@ -181,3 +181,14 @@ span{
 /* till here Main page background image set up completed. */
 /* now the products will come on screen */
 
+.Box{
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #007185;
+    height: 400px;
+    justify-content: space-between;
+    align-items:flex-start;
+
+}
