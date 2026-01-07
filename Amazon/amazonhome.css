@@ -198,5 +198,6 @@ span{
     width: 20px;
     height: auto;
     justify-content: space-evenly;
+    display: flex;
     
 }
